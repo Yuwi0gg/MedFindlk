@@ -1,5 +1,5 @@
 // Only cache public, static app-shell files. No API, authentication, user or pharmacy data.
-const CACHE='medifind-shell-v0.1.1';
+const CACHE='medifind-shell-v0.1.2';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./assets/icon.svg','./assets/icon-192.png','./assets/icon-512.png'];
 const publicPaths=new Set(ASSETS.map(file=>new URL(file,self.registration.scope).pathname));
 self.addEventListener('install',event=>{
